@@ -1,0 +1,323 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: white;
+  color: black;
+  height: 100%;
+  width: 100%;
+  padding: 15px;
+  font-family: 'Nunito', sans-serif;
+}
+
+.card-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 90vh;
+}
+
+.card-header {
+  color: white;
+  margin: 10px;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: auto;
+  width: 30vw;
+  padding: 5px;
+  flex-direction: column;
+  gap: 20px;
+  border: none;
+  border-radius: 15px;
+  background-color: rgb(34, 34, 34);
+}
+
+form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.inputs {
+  height: 4vh;
+  width: 20vw;
+  margin: 10px;
+  border: none;
+  border-radius: 9px;
+  text-align: center;
+  font-size: 15px;
+}
+
+.btn {
+  height: 3vh;
+  width: 18vw;
+  border: none;
+  border-radius: 9px;
+  margin: 17px;
+  font-size: 15px;
+}
+
+.link {
+  text-decoration: none;
+  text-align: center;
+  color: white;
+  margin: 35px;
+  border: none;
+  padding: 10px;
+  font-weight: bold;
+  border-radius: 9px;
+  background-color: rgb(48, 100, 255);
+}
+
+.err-msg {
+  width: 13vw;
+  padding: 10px;
+  border: none;
+  border-radius: 15px;
+  text-align: center;
+  font-weight: bold;
+  color: white;
+  background-color: red;
+}
+
+.post-header, .post-title {
+  text-align: center;
+  font-size: 50px;
+  margin: 10px;
+}
+
+.posts-image {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 50vh;
+}
+
+.post-images {
+  width: 30vw;
+  border-radius: 9px;
+  border: none;
+  transition: 0.4s ease-in-out;
+}
+
+.post-images:hover {
+  border: none;
+  transform: scale(1.1);
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+.btn-logout-div {
+  margin: 0 30px;
+  align-items: center;
+}
+
+.btn-logout {
+  font-family: 'Nunito', sans-serif;
+  padding: 8px;
+  border: none;
+  border-radius: 9px;
+  font-size: 15px;
+  font-weight: bolder;
+  transition: all 0.3s ease-in-out;
+  background-color: rgb(255, 45, 45);
+}
+
+.btn-logout:hover {
+  transform: scale(1.1);
+  color: rgb(254, 119, 119);
+  background-color: rgb(155, 1, 1);
+}
+
+.btns-return-home-div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 30px;
+}
+
+.btn-home {
+  text-decoration: none;
+  color: black;
+  border: none;
+  border-radius: 9px;
+  font-weight: bolder;
+  font-size: 15px;
+  padding: 8px;
+  transition: all 0.3s ease-in-out;
+  background-color: rgba(44, 69, 255, 0.88);
+}
+
+.btn-home:hover {
+  transform: scale(1.1);
+  background-color: rgb(19, 52, 136);
+  color: rgb(140, 161, 230);
+}
+
+.post-items {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 5vh;
+}
+
+.blog-image {
+  width: 65vw;
+  border-radius: 15px;
+}
+
+.post-content {
+  width: 60vw;
+  font-size: 20px;
+}
+
+.comments-div {
+  border: 2px solid black;
+  margin: 10px 0 0 0;
+  border-radius: 9px;
+  max-width: 100vw;
+}
+
+.profile-container {
+  border: 1px solid grey;
+  margin: 5px;
+  padding: 7px;
+  border-radius: 9px;
+}
+
+.profile-items {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+}
+
+.profile-picture {
+  width: 3vw;
+  border-radius: 50%;
+  align-self: flex-start;
+}
+
+.profile-username {
+  font-weight: bold;
+  font-size: 14px;
+  color: rgb(68, 68, 68);
+}
+
+.profile-comment {
+  font-size: 18px;
+  overflow-wrap: break-word;
+  word-break: break-all;
+}
+
+.profile-name-time {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.profile-comment-time {
+  font-size: 11px;
+  color: rgb(123, 123, 123);
+}
+
+.comment-form {
+  margin: 10px;
+}
+
+.comment-input {
+  width: 50vw;
+  height: 4vh;
+  padding: 3px;
+  border-radius: 9px;
+  border: 1px solid black;
+  margin: 5px;
+  text-align: center;
+  font-size: 15px;
+}
+
+.btn-comment-submit {
+  border-radius: 9px;
+  border: 1px solid grey;
+  padding: 10px;
+  margin: 10px;
+  width: 30vw;
+  font-weight: bold;
+  font-size: 15px;
+  transition: 0.3s ease-in-out;
+}
+
+.btn-comment-submit:hover {
+  background-color: rgb(40, 114, 40);
+  color: rgb(77, 226, 77);
+  transform: scale(1.1);
+}
+
+.comment-time-actions {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 91.5vw;
+}
+
+.delete-btn, .edit-btn {
+  font-size: 15px;
+  margin: 0 5px;
+  border: 0;
+  background-color: white;
+  color: rgb(177, 177, 177);
+  transition: 0.3s ease-in-out;
+}
+
+.delete-btn:hover {
+  transform: scale(1.2);
+  color: rgb(255, 0, 0);
+}
+
+.edit-btn:hover {
+  transform: scale(1.2);
+  color: rgb(0, 89, 255);
+}
+
+.comment-edit-text {
+  border: 1px solid grey;
+  font-size: 16px;
+  border-radius: 9px;
+  text-align: center;
+  width: 92.5vw;
+  margin: 2px;
+  height: 3vh;
+}
+
+.comment-edit-btns {
+  display: flex;
+  justify-content: center;
+}
+
+.comment-btn-save, .comment-btn-cancel {
+  padding: 5px;
+  border: 0;
+  font-size: 15px;
+  color: rgb(173, 173, 173);
+  background-color: white;
+  transition: 0.3s ease-in-out;
+}
+
+
+.comment-btn-save:hover, .comment-btn-cancel:hover {
+  transform: scale(1.1);
+  color: rgb(94, 94, 94);
+}
