@@ -49,7 +49,7 @@ const SignUp = () => {
                     <form method='POST' onSubmit={handleSubmit}>
                         <input className="inputs" type='text' placeholder='Enter your Name' name='username' id="username" onChange={handleChange} required />
                         <input className="inputs" type='password' placeholder='Choose a Password' name='password' onChange={handleChange} required />
-                        <input className="inputs" type='text' placeholder='Profile Picture' name='profileImage' onChange={handleChange} />
+                        <input className="inputs" type='text' placeholder='Profile Picture' name='profileImage' onChange={handleChange} required/>
                         <button className='btn' type='submit'>Submit</button>
                         <NavLink className="link" to="/login">Login if you have an account</NavLink>
                     </form>
